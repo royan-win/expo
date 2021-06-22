@@ -1,10 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 function Home() {
+    const history = useHistory();
     return (
         <div className="overflow-hidden h-screen overflow-y-hidden w-full">
             <img className="h-screen z-0 w-full" src="Mainhall.png" alt=""/>
-            <div className="-mt-14 flex h-3 w-3">
+            <div onClick={() => history.push("/auditorium")} className="-mt-14 cursor-pointer flex h-3 w-3">
                 <span className="absolute animate-ping h-3 w-3 inline-flex opacity-75 z-10 -mt-96 ml-36 rounded-full bg-green-300"></span>
                 <span className="absolute inline-flex z-10 h-3 w-3 -mt-96 ml-36 rounded-full bg-green-600"></span>
             </div>

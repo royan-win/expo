@@ -4,7 +4,7 @@ import { IoMdCamera } from 'react-icons/io';
 
 function BottomNav() {
     return (
-        <div className="w-full h-screen">
+        <div className="w-full h-0">
             <section id="bottom-navigation" className="block fixed inset-x-0 bottom-0 z-10 bg-gray-900 from-gray-200 to-gray-900 bg-gradient-to-b opacity-80 shadow">
                 <div id="tabs" className="flex text-white justify-between">
                     <a href="/home" className="w-full focus:text-yellow-500 hover:text-yellow-500 justify-center inline-block text-center pt-2 pb-1">
